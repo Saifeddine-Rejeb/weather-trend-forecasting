@@ -17,7 +17,6 @@
 6. [Methodology](#methodology)
 7. [Results](#results)
 8. [Key Insights](#key-insights)
-9. [Demo](#demo)
 
 
 ## Project Overview
@@ -152,11 +151,6 @@ The stacking ensemble outperforms both base models across all metrics. The Linea
 - **Stacking consistently beats both base models.** The LSTM and RF capture different aspects of the data and combining them through a meta-learner extracts more signal than either alone.
 - **Precipitation is the harder target.** It is sparse and heavily right-skewed with most observations at or near zero. A dedicated two-stage model (classify rain/no-rain, then regress the amount) would be a natural next step.
 - **Unit duplicates add redundancy.** Temperature, wind, pressure, visibility, and feels-like all appear in two unit systems. Dropping one from each pair would reduce noise without losing information.
-
-
-## Demo
-
-[Link to demo video](#)
 
 
 ## Author
